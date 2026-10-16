@@ -1,0 +1,147 @@
+[
+  {
+    "key": "superpowers",
+    "board": "hermes-workflow",
+    "id": "t_4f3e1e5e",
+    "title": "Проверить актуальный Superpowers",
+    "parents": []
+  },
+  {
+    "key": "budget",
+    "board": "hermes-workflow",
+    "id": "t_07ca2ccc",
+    "title": "Пересмотреть модельный бюджет после октября",
+    "parents": []
+  },
+  {
+    "key": "backup",
+    "board": "hermes-workflow",
+    "id": "t_098f4fa1",
+    "title": "Резервирование проекта Hermes и состояния Kanban",
+    "parents": []
+  },
+  {
+    "key": "sync-design",
+    "board": "hermes-workflow",
+    "id": "t_0957877a",
+    "title": "Спроектировать GitHub ↔ Hermes синхронизацию для всех проектов",
+    "parents": []
+  },
+  {
+    "key": "sync-script",
+    "board": "hermes-workflow",
+    "id": "t_f7c5c60d",
+    "title": "Реализовать детерминированный импорт и sync GitHub Issues",
+    "parents": [
+      "t_0957877a"
+    ]
+  },
+  {
+    "key": "sync-cron",
+    "board": "hermes-workflow",
+    "id": "t_450d66b1",
+    "title": "Настроить script-only периодическую синхронизацию",
+    "parents": [
+      "t_f7c5c60d"
+    ]
+  },
+  {
+    "key": "integration",
+    "board": "hermes-workflow",
+    "id": "t_d939d3e8",
+    "title": "Спроектировать и испытать интеграционные ветки и PR",
+    "parents": [
+      "t_0957877a"
+    ]
+  },
+  {
+    "key": "ecosystem-research",
+    "board": "hermes-workflow",
+    "id": "t_a37160ac",
+    "title": "Исследовать open-source экосистему синхронизации устройств",
+    "parents": []
+  },
+  {
+    "key": "ecosystem-decision",
+    "board": "hermes-workflow",
+    "id": "t_f794aa20",
+    "title": "Выбрать подход к кроссплатформенной экосистеме",
+    "parents": [
+      "t_a37160ac"
+    ]
+  },
+  {
+    "key": "pilot",
+    "board": "tortuga-ai",
+    "id": "t_f896fb5e",
+    "title": "Пилот переноса GitHub-процесса Tortuga-AI в Hermes",
+    "parents": []
+  },
+  {
+    "key": "restore",
+    "board": "tortuga-infra",
+    "id": "t_570a64d7",
+    "title": "Установка и восстановление Тортуги с чистой системы",
+    "parents": []
+  },
+  {
+    "key": "qbittorrent",
+    "board": "tortuga-infra",
+    "id": "t_c844c685",
+    "title": "Добавить воспроизводимый модуль qBittorrent",
+    "parents": []
+  },
+  {
+    "key": "minecraft",
+    "board": "minecraft-server",
+    "id": "t_44159f2c",
+    "title": "Проверить Minecraft в survival и creative",
+    "parents": []
+  },
+  {
+    "key": "mc-auth",
+    "board": "minecraft-server",
+    "id": "t_a5be2816",
+    "title": "Проверить кастомную Tailscale-авторизацию",
+    "parents": []
+  },
+  {
+    "key": "laptop-host",
+    "board": "chezmoi",
+    "id": "t_c4b76b6e",
+    "title": "Исследовать и оптимизировать ресурсы laptop-host",
+    "parents": []
+  },
+  {
+    "key": "prices-research",
+    "board": "price-scrapper",
+    "id": "t_346a61e2",
+    "title": "Исследовать аналоги и источники продуктовых цен",
+    "parents": []
+  },
+  {
+    "key": "prices-mvp",
+    "board": "price-scrapper",
+    "id": "t_9773b343",
+    "title": "Выбрать и проверить минимальный сценарий экономии",
+    "parents": [
+      "t_346a61e2"
+    ]
+  },
+  {
+    "key": "tbc",
+    "board": "bank-sms-tracker",
+    "id": "t_d1ffcf4e",
+    "title": "Проверить аналитику TBC и экспорт расходов",
+    "parents": []
+  },
+  {
+    "key": "sms-decision",
+    "board": "bank-sms-tracker",
+    "id": "t_8768e3f5",
+    "title": "Решить нужен ли BankSMSTracker",
+    "parents": [
+      "t_d1ffcf4e"
+    ]
+  }
+]
