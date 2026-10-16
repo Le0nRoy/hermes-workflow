@@ -1,0 +1,37 @@
+[
+  {
+    "project": "hermes",
+    "board": "hermes-workflow",
+    "path": "${HERMES_WORKFLOW_ROOT}"
+  },
+  {
+    "project": "tortuga-ai",
+    "board": "tortuga-ai",
+    "path": "${TORTUGA_AI_ROOT}"
+  },
+  {
+    "project": "tortuga-infra",
+    "board": "tortuga-infra",
+    "path": "${TORTUGA_INFRA_ROOT}"
+  },
+  {
+    "project": "minecraft-server",
+    "board": "minecraft-server",
+    "path": "${MINECRAFT_ROOT}"
+  },
+  {
+    "project": "price-scrapper",
+    "board": "price-scrapper",
+    "path": "${PRICE_SCRAPPER_ROOT}"
+  },
+  {
+    "project": "chezmoi",
+    "board": "chezmoi",
+    "path": "${CHEZMOI_ROOT}"
+  },
+  {
+    "project": "bank-sms-tracker",
+    "board": "bank-sms-tracker",
+    "path": "${BANK_TRACKER_ROOT}"
+  }
+]

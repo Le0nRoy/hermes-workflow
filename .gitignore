@@ -1,0 +1,34 @@
+# Secrets and local overrides
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+auth.json
+credentials.json
+config.local.*
+# Runtime and private data
+.hermes/
+state/
+sessions/
+logs/
+artifacts/
+private/
+client-data/
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+# Tool caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+.DS_Store
+# Private historical monitoring and run evidence (keep local)
+experiments/tortuga-monitoring-audit/inventory.json
+experiments/t_95b161ac/run-01/

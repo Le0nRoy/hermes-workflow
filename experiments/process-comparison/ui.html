@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Order fixture</title>
+<label for="quantity">Quantity</label><input id="quantity" type="number" value="1">
+<button id="save">Save order</button>
+<p role="status" aria-live="polite" id="status">Ready</p>
+<ul id="orders"></ul>
+<script>
+// Synthetic test-only variants; no network, storage or client data.
+const variant = new URLSearchParams(location.search).get('variant') || 'clean';
+const button = document.querySelector('#save');
+const quantity = document.querySelector('#quantity');
+const status = document.querySelector('#status');
+button.addEventListener('click', () => {
+  const value = Number(quantity.value);
+  if (!Number.isInteger(value) || value < 1 || value > 10) {
+    status.textContent = 'Invalid quantity';
+    return;
+  }
+  if (variant !== 'ui-double') button.disabled = true;
+  status.textContent = 'Saving';
+  setTimeout(() => {
+    const row = document.createElement('li');
+    row.textContent = `Quantity: ${variant === 'ui-value' ? 1 : value}`;
+    document.querySelector('#orders').append(row);
+    status.textContent = 'Saved';
+    button.disabled = false;
+  }, 150);
+});
+</script>
+</html>
